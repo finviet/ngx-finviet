@@ -1,0 +1,36 @@
+.no-padding{
+  padding:0px;
+}
+ul.nav-menu-list-style .nav-header .menu-collapsible-icon{
+  position:absolute;
+  top:0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+ul.nav-menu-list-style{
+  margin:0;
+
+}
+ul.nav-menu-list-style .nav-header{
+  border-top:1px solid #FFFFFF;
+  border-bottom:1px solid #e8e8e8;
+  display:block;
+  margin:0;
+  line-height:42px;
+  padding:0 8px;
+  font-weight:600;
+}
+ul.nav-menu-list-style> li{
+  position:relative; }
+ul.nav-menu-list-style> li i{
+  /*border-bottom:1px solid #e8e8e8;*/
+  padding:0 10px;
+  line-height:40px;
+  background:#5cb85c;
+  top: 0 !IMPORTANT;
+  border-radius: 3px;
+
+}
+
+

@@ -1,0 +1,28 @@
+{
+  "name": "ngx-finviet",
+  "version": "0.4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finviet/ngx-finviet"
+  },
+  "author": {
+    "name": "finviet",
+    "email": "phung.nguyen@finviet.com.vn"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finviet/ngx-finviet/issues"
+  },
+  "main": "ngx-finviet.umd.js",
+  "module": "ngx-finviet.js",
+  "jsnext:main": "ngx-finviet.js",
+  "typings": "ngx-finviet.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

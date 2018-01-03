@@ -1,0 +1,16 @@
+<swiper [config]="config" >
+  <div class="swiper-wrapper wrap-box-img-swiper">
+    <div class="swiper-slide" *ngFor="let img of imgs;let i = index ">
+      <img [src]="getUrl(img.file)">
+      <div class="carousel-caption box-caption">
+        <h3>{{img.name}}</h3>
+        <p>Hình {{i+1}}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>

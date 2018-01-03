@@ -1,0 +1,28 @@
+
+<div class="col-md-12" >
+  <div class="well no-padding">
+    <div>
+      <ul *ngIf="tree" class="nav-menu-list-style">
+        <li class="tree-toggle nav-header glyphicon-icon-rpad">
+          <div>
+
+            <i   class="menu-collapsible-icon"  (click)="clickNode($event)"  [ngClass]="getFoldingCss()"></i>
+            <div style="padding-left: 35px !important;" href="#" (click)="onNodeClick($event)">
+              <ng-template id = 'demo' [ngIf]="!nodeTemplate"> {{tree.value}}</ng-template>
+              <ng-template [ngIf]="nodeTemplate" [ngTemplateOutlet]="nodeTemplate"
+                        [ngOutletContext]="{node: tree}"></ng-template>
+          </div>
+          <ng-template [ngIf]="tree.folding">
+            <npp-tree *ngFor="let child of tree.children; let position = index"
+                      [parent]="child.parent"
+                      [tree]="child"
+                      (nodeSelected)="onNodeSelected($event)" [tmp]="nodeTemplate">
+
+            </npp-tree>
+          </ng-template>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

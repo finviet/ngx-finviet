@@ -1,0 +1,4 @@
+<form [formGroup]="form">
+  <input type="text" class="form-control" currency formControlName="currency" (blur)="onBlurChange()"  (rawChange)="onValueChanged($event)"
+         placeholder="{{placeholder}}" [(ngModel)]="_value">
+</form>

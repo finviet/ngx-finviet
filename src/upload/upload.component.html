@@ -1,0 +1,34 @@
+<div class="image-upload"
+     NppFileDrop
+     [accept]="['image/*']"
+     (isFileOver)="fileOver($event)"
+     (fileDrop)="fileChange($event)"
+     [ngClass]="{'file-is-over': isFileOver}"
+>
+
+  <div class="file-upload hr-inline-group box-upload-images">
+    <label class="upload-button">
+      <input
+        type="file"
+        accept="image/*,.pdf"
+        multiple (change)="fileChange(input.files)"
+        #input id="{{idInput}}">
+      <div class="drag-box-message">{{dropBoxMessage}}</div>
+    </label>
+  </div>
+  <div *ngIf="preview" class="image-container hr-inline-group">
+    <div
+      class="image"
+      *ngFor="let file of files"
+      [ngStyle]="{'background-image': 'url('+ file.src +')'}" >
+      <!--[ngStyle]="{'background-image': 'url('+ file.src +')'}"-->
+      <!--[ngStyle]="{'background-image': 'url('+ getImageUrl(file.src) +')'}"-->
+      <div *ngIf="file.pending" class="loading-overlay">
+        <div class="spinningCircle"></div>
+      </div>
+      <div *ngIf="!file.pending" class="x-mark" (click)="deleteFile(file)">
+        <span class="close"></span>
+      </div>
+    </div>
+  </div>
+</div>

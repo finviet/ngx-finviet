@@ -1,0 +1,7 @@
+  <div class="wrap-box-input" >
+  	<!-- <label class="title" [hidden]="label==null || label==''">{{label}}</label> -->
+    <div class="input">
+      <input class="form-control" type="text" placeholder="{{placeholder}}" [(ngModel)]="_value" (change)="onValueChanged($event)"/>
+    </div>
+  </div>
+
