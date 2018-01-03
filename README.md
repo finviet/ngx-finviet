@@ -18,7 +18,7 @@ ngx-finviet
  To install this library, run:
 
  ```
- $ npm install ngx-finviet --save
+ $ npm install ngx-finviet --save-dev
 
  ```
 
