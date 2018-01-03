@@ -69,8 +69,8 @@ ngx-finviet
  ```
  ## Congrats!
 
- You are awesome!
- 
+ You are awesome! :ok_hand:
+
  ## License
 
  MIT ©`finviet`
