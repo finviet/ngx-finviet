@@ -1,9 +1,9 @@
 <!-- # ngx-finviet
 ngx-finviet
  -->
- # Project Title
+ # Ngx-finviet
 
- One Paragraph of project description goes here
+ This is a plugin of FinViet, editor by FinViet.
 
  ## Getting Started
 
@@ -23,68 +23,61 @@ ngx-finviet
 
  Say what the step will be
 
- ```
- Give the example
- ```
-
- And repeat
+ To install this library, run:
 
  ```
- until finished
+ $ npm install ngx-finviet --save
+
  ```
 
  End with an example of getting some data out of the system or using it for a little demo
 
- ## Running the tests
+ ## Consuming your library
 
- Explain how to run the automated tests for this system
-
- ### Break down into end to end tests
-
- Explain what these tests test and why
+ Once you have published your library to npm, you can import your library in any Angular application by running:
 
  ```
- Give an example
+ $ npm install ngx-finviet
  ```
-
- ### And coding style tests
-
- Explain what these tests test and why
+ and then from your Angular AppModule:
 
  ```
- Give an example
+ import { BrowserModule } from '@angular/platform-browser';
+ import { NgModule } from '@angular/core';
+  
+ import { AppComponent } from './app.component';
+  
+ // Import your library
+ import { SampleModule } from 'ngx-finviet';
+  
+ @NgModule({
+   declarations: [
+     AppComponent
+   ],
+   imports: [
+     BrowserModule,
+  
+     // Specify your library as an import
+     LibraryModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
+ })
+ export class AppModule { }
+
  ```
+ Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
- ## Deployment
-
- Add additional notes about how to deploy this on a live system
-
- ## Built With
-
- * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
- * [Maven](https://maven.apache.org/) - Dependency Management
- * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
- ## Contributing
-
- Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
- ## Versioning
-
- We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
- ## Authors
-
- * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+ ```
+ <!-- You can now use your library component in app.component.html -->
+ <h1>
+   {{title}}
+ </h1>
+ <sampleComponent></sampleComponent>
+ ```
 
  ## License
 
+ MIT © ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `finviet`
+
  This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
- ## Acknowledgments
-
- * Hat tip to anyone who's code was used
- * Inspiration
- * etc
