@@ -9,14 +9,6 @@ ngx-finviet
 
  These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
- ### Prerequisites
-
- What things you need to install the software and how to install them
-
- ```
- Give examples
- ```
-
  ### Installing
 
  A step by step series of examples that tell you have to get a development env running
@@ -75,9 +67,12 @@ ngx-finviet
  </h1>
  <sampleComponent></sampleComponent>
  ```
+ ## Congrats!
 
+ You are awesome!
+ 
  ## License
 
- MIT © ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `finviet`
+ MIT ©`finviet`
 
  This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
