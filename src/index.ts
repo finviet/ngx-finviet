@@ -4,12 +4,9 @@ import { FormsModule } from '@angular/forms'
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import {ToasterModule, ToasterService} from "angular2-toaster";
 import { SampleComponent } from './sample.component';
-import { SampleDirective } from './sample.directive';
-import { SamplePipe } from './sample.pipe';
-import { SampleService } from './sample.service';
 import { ViewimageComponent } from './viewimage/viewimage.component';
 import { InputComponent } from './input/input.component';
-import { CurrencyInput } from './input/currency-input.component';
+import { CurrencyInputComponent } from './input/currency-input.component';
 import { PopupComponent } from './popup/popup.component';
 import { UploadImagesComponent } from './popup/upload-images.component';
 import { PopupService } from './popup/popup.service';
@@ -23,9 +20,6 @@ import { AlertComponent } from './alert.component';
 import {FileService} from "./file.service";
 
 export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
 export * from './viewimage/viewimage.component';
 export * from './input/input.component';
 export * from './input/currency-input.component';
@@ -50,11 +44,9 @@ export * from "./file.service";
   ],
   declarations: [
     SampleComponent,
-    SampleDirective,
-    SamplePipe,
     ViewimageComponent,
     InputComponent,
-    CurrencyInput,
+    CurrencyInputComponent,
     PopupComponent,
     UploadImagesComponent,
     TreeComponent,
@@ -65,11 +57,9 @@ export * from "./file.service";
   ],
   exports: [
     SampleComponent,
-    SampleDirective,
-    SamplePipe,
     ViewimageComponent,
     InputComponent,
-    CurrencyInput,
+    CurrencyInputComponent,
     PopupComponent,
     UploadImagesComponent,
     TreeComponent,
@@ -79,16 +69,15 @@ export * from "./file.service";
     AlertComponent
   ]
 })
-export class SampleModule {
+export class FVCommonMoDule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
+      ngModule: FVCommonMoDule,
       providers: [
         PopupService,
         AlertService,
         WaitingService,
         PopupService,
-        SampleService,
         ToasterService,
         FileService
       ]
