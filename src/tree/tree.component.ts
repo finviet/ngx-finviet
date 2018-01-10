@@ -2,11 +2,11 @@ import {Component, OnInit, Output, Input, EventEmitter,ContentChild} from '@angu
 import {TreeNode} from "./tree-type";
 
 @Component({
-  selector: 'npp-tree',
+  selector: 'fv-tree',
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.css']
 })
-export class TreeComponent implements OnInit {
+export class FVTreeComponent implements OnInit {
   @Input()
   public tree: TreeNode;
   @Input()

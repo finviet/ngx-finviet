@@ -4,7 +4,7 @@ import {EcomResponse} from "./ecom-response";
 import {RequestOptions, Http, Headers, Response} from "@angular/http";
 
 @Injectable()
-export class FileService {
+export class FVFileService {
   uploadUrl:string='/upload';
   arrDownload:any = [];
   agentType:any = [];

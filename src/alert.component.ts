@@ -5,11 +5,11 @@ import {BodyOutputType, Toast, ToasterConfig, ToasterService} from "angular2-toa
 
 @Component({
   moduleId: module.id,
-  selector: 'alert',
+  selector: 'fv-alert',
   templateUrl: 'alert.component.html'
 })
 
-export class AlertComponent {
+export class FVAlertComponent {
   config: ToasterConfig;
   constructor(private alertService: AlertService, private toasterService: ToasterService) {
   }

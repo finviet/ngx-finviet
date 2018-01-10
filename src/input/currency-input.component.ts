@@ -95,10 +95,10 @@ export class CurrencyMaskDirective {
 }
 
 @Component({
-  selector: 'currency-input',
+  selector: 'fv-currency-input',
   templateUrl: './currency-input.component.html'
 })
-export class CurrencyInputComponent {
+export class FVCurrencyInputComponent {
   @Input() placeholder: any;
   @Input() checkValid:boolean;
   @Output() onBlur = new EventEmitter();

@@ -1,11 +1,11 @@
 import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
-  selector: 'npp-viewimage',
+  selector: 'fv-viewimage',
   templateUrl: './viewimage.component.html',
   styleUrls: ['./viewimage.component.css']
 })
-export class ViewimageComponent implements OnInit {
+export class FVViewimageComponent implements OnInit {
   @Input() imgs;
   @Input() index;
   config = {

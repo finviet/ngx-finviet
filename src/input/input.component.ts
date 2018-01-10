@@ -1,11 +1,11 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: 'npp-input',
+  selector: 'fv-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent implements OnInit {
+export class FVInputComponent implements OnInit {
 /*  @Input() label: any;*/
   @Input() placeholder: any;
   @Output() valueChange = new EventEmitter();

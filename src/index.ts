@@ -4,20 +4,20 @@ import { FormsModule } from '@angular/forms'
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import {ToasterModule, ToasterService} from "angular2-toaster";
 import { SampleComponent } from './sample.component';
-import { ViewimageComponent } from './viewimage/viewimage.component';
-import { InputComponent } from './input/input.component';
-import { CurrencyInputComponent } from './input/currency-input.component';
-import { PopupComponent } from './popup/popup.component';
-import { UploadImagesComponent } from './popup/upload-images.component';
-import { PopupService } from './popup/popup.service';
-import { TreeComponent } from './tree/tree.component';
+import { FVViewimageComponent } from './viewimage/viewimage.component';
+import { FVInputComponent } from './input/input.component';
+import { FVCurrencyInputComponent } from './input/currency-input.component';
+import { FVPopupComponent } from './popup/popup.component';
+import { FVUploadImagesComponent } from './popup/upload-images.component';
+import { FVPopupService } from './popup/popup.service';
+import { FVTreeComponent } from './tree/tree.component';
 /*import { FileDropDirective } from './upload/file-drop.directive';
 import { UploadComponent } from './upload/upload.component';*/
-import { WaitingService } from './waiting/waiting.service';
-import { WaitingComponent } from './waiting/waiting.component';
-import { AlertService } from './alert.service';
-import { AlertComponent } from './alert.component';
-import {FileService} from "./file.service";
+import { FVWaitingService } from './waiting/waiting.service';
+import { FVWaitingComponent } from './waiting/waiting.component';
+import { FVAlertService } from './alert.service';
+import { FVAlertComponent } from './alert.component';
+import { FVFileService} from "./file.service";
 
 export * from './sample.component';
 export * from './viewimage/viewimage.component';
@@ -44,29 +44,29 @@ export * from "./file.service";
   ],
   declarations: [
     SampleComponent,
-    ViewimageComponent,
-    InputComponent,
-    CurrencyInputComponent,
-    PopupComponent,
-    UploadImagesComponent,
-    TreeComponent,
+    FVViewimageComponent,
+    FVInputComponent,
+    FVCurrencyInputComponent,
+    FVPopupComponent,
+    FVUploadImagesComponent,
+    FVTreeComponent,
 /*    FileDropDirective,*/
 /*    UploadComponent,*/
-    WaitingComponent,
-    AlertComponent
+    FVWaitingComponent,
+    FVAlertComponent
   ],
   exports: [
     SampleComponent,
-    ViewimageComponent,
-    InputComponent,
-    CurrencyInputComponent,
-    PopupComponent,
-    UploadImagesComponent,
-    TreeComponent,
+    FVViewimageComponent,
+    FVInputComponent,
+    FVCurrencyInputComponent,
+    FVPopupComponent,
+    FVUploadImagesComponent,
+    FVTreeComponent,
 /*    FileDropDirective,*/
 /*    UploadComponent,*/
-    WaitingComponent,
-    AlertComponent
+    FVWaitingComponent,
+    FVAlertComponent
   ]
 })
 export class FVCommonMoDule {
@@ -74,12 +74,12 @@ export class FVCommonMoDule {
     return {
       ngModule: FVCommonMoDule,
       providers: [
-        PopupService,
-        AlertService,
-        WaitingService,
-        PopupService,
+        FVPopupService,
+        FVAlertService,
+        FVWaitingService,
+        FVPopupService,
         ToasterService,
-        FileService
+        FVFileService
       ]
     };
   }

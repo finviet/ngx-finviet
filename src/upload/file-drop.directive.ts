@@ -2,9 +2,9 @@ import {Directive, EventEmitter,Input, Output, HostListener} from '@angular/core
 
 
 @Directive({
-  selector: '[NppFileDrop]'
+  selector: '[FVFileDrop]'
 })
-export class FileDropDirective {
+export class FVFileDropDirective {
   @Input() accept: string[];
 
   @Output()

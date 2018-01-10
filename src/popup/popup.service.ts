@@ -8,7 +8,7 @@ import {ViewimageComponent} from "../viewimage/viewimage.component";
  */
 
 @Injectable()
-export class PopupService {
+export class FVPopupService {
 
   constructor(private modalService: NgbModal) {
   }
