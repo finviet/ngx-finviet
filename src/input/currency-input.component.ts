@@ -16,7 +16,7 @@ String.prototype.splice = function(idx, rem, s) {
     '(keydown.backspace)':'onInputChange($event.target.value, true)'
   }
 })
-export class CurrencyMaskDirective {
+export class FVCurrencyMaskDirective {
   constructor(public model: NgControl, private _changeDetectionRef: ChangeDetectorRef) {}
 
   @Output() rawChange:EventEmitter<string> = new EventEmitter<string>();

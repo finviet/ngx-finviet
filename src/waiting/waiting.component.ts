@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {WaitingService} from "./waiting.service";
+import {FVWaitingService} from "./waiting.service";
 
 
 @Component({
@@ -10,7 +10,7 @@ import {WaitingService} from "./waiting.service";
 
 export class FVWaitingComponent {
   message:any = {waiting:false};
-  constructor(private waitingService: WaitingService) {
+  constructor(private waitingService: FVWaitingService) {
   }
 
   ngOnInit() {

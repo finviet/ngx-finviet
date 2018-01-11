@@ -1,8 +1,8 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import {ToasterModule, ToasterService} from "angular2-toaster";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ToasterModule, ToasterService} from 'angular2-toaster';
 import { SampleComponent } from './sample.component';
 import { FVViewimageComponent } from './viewimage/viewimage.component';
 import { FVInputComponent } from './input/input.component';
@@ -17,7 +17,9 @@ import { FVWaitingService } from './waiting/waiting.service';
 import { FVWaitingComponent } from './waiting/waiting.component';
 import { FVAlertService } from './alert.service';
 import { FVAlertComponent } from './alert.component';
-import { FVFileService} from "./file.service";
+import { FVFileService} from './file.service';
+import {FVImportComponent} from "./import/import.component";
+import {FVFileImportComponent} from "./import/upload/file-import.component";
 
 export * from './sample.component';
 export * from './viewimage/viewimage.component';
@@ -33,7 +35,9 @@ export * from './waiting/waiting.service';
 export * from './waiting/waiting.component';
 export * from './alert.service';
 export * from './alert.component';
-export * from "./file.service";
+export * from './file.service';
+export * from './import/import.component';
+export * from './import/upload/file-import.component';
 
 @NgModule({
   imports: [
@@ -53,7 +57,9 @@ export * from "./file.service";
 /*    FileDropDirective,*/
 /*    UploadComponent,*/
     FVWaitingComponent,
-    FVAlertComponent
+    FVAlertComponent,
+    FVImportComponent,
+    FVFileImportComponent,
   ],
   exports: [
     SampleComponent,
@@ -66,7 +72,9 @@ export * from "./file.service";
 /*    FileDropDirective,*/
 /*    UploadComponent,*/
     FVWaitingComponent,
-    FVAlertComponent
+    FVAlertComponent,
+    FVImportComponent,
+    FVFileImportComponent,
   ]
 })
 export class FVCommonMoDule {

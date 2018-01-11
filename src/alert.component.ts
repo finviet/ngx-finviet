@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {AlertService} from "./alert.service";
-import {BodyOutputType, Toast, ToasterConfig, ToasterService} from "angular2-toaster";
+import {FVAlertService} from './alert.service';
+import {BodyOutputType, Toast, ToasterConfig, ToasterService} from 'angular2-toaster';
 
 
 @Component({
@@ -11,14 +11,14 @@ import {BodyOutputType, Toast, ToasterConfig, ToasterService} from "angular2-toa
 
 export class FVAlertComponent {
   config: ToasterConfig;
-  constructor(private alertService: AlertService, private toasterService: ToasterService) {
+  constructor(private alertService: FVAlertService, private toasterService: ToasterService) {
   }
 
   ngOnInit() {
     this.alertService.getMessage().subscribe(message => {
       if(message){
         this.showToast(message.type, 'Alert', message.text);
-        setTimeout(()=>{
+        setTimeout(() => {
           this.toasterService.clear();
         },2000);
       }

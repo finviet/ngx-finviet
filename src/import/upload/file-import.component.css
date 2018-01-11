@@ -1,0 +1,29 @@
+.name-pictures{
+  margin-top: 20px;
+}
+.name-pictures label{
+  padding-top: 5px;
+  font-size: 16px;
+}
+.select2-container{
+  width: 100% !important;
+}
+.form-inline{
+  display: block !important;
+}
+.form-inline label{
+  justify-content: flex-start !important;
+  -webkit-justify-content: flex-start !important;
+}
+.form-group{
+  margin-bottom: 1rem !important;
+}
+.title {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  text-shadow: none !important;
+  color: #000 !important;
+}
+select2.select-option{
+  margin: 0 20px !important;
+}

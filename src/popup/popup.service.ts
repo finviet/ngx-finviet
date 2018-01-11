@@ -1,8 +1,8 @@
 import {Injectable} from "@angular/core";
-import {PopupComponent} from "./popup.component";
+import {FVPopupComponent} from "./popup.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {UploadImagesComponent} from "./upload-images.component";
-import {ViewimageComponent} from "../viewimage/viewimage.component";
+import {FVUploadImagesComponent} from "./upload-images.component";
+import {FVViewimageComponent} from "../viewimage/viewimage.component";
 /**
  * Created by vu.pham on 4/20/2017.
  */
@@ -14,7 +14,7 @@ export class FVPopupService {
   }
 
     showConfirm(msg: string,viewButtonNo ?:boolean): Promise<boolean>{
-      const modalRef = this.modalService.open(PopupComponent,{backdrop:'static'});
+      const modalRef = this.modalService.open(FVPopupComponent,{backdrop:'static'});
     modalRef.componentInstance.msg = msg;
       if(viewButtonNo == undefined){
         modalRef.componentInstance.viewButtonNo = true;
@@ -32,12 +32,12 @@ export class FVPopupService {
 
 
   showUpload(msg: string): Promise<boolean>{
-    const modalRef = this.modalService.open(UploadImagesComponent);
+    const modalRef = this.modalService.open(FVUploadImagesComponent);
     modalRef.componentInstance.msg = msg;
     return modalRef.result;
   }
   showPopupViewImage(imgs: any,index:number): Promise<any>{
-    const modalRef = this.modalService.open(ViewimageComponent);
+    const modalRef = this.modalService.open(FVViewimageComponent);
     modalRef.componentInstance.imgs = imgs;
     modalRef.componentInstance.index = index;
     console.log('Xem thu modalRef',modalRef)

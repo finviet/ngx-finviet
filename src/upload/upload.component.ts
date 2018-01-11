@@ -1,9 +1,8 @@
-///<reference path="../../../../node_modules/@angular/http/src/headers.d.ts"/>
 import {Component,Input, Output, OnInit, EventEmitter} from '@angular/core';
-import {FVFileService} from "../file.service";
-import {Headers} from "@angular/http";
-import {FVAlertService} from "../alert.service";
-import {FVWaitingService} from "../waiting/waiting.service";
+import {FVFileService} from '../file.service';
+import {Headers} from '@angular/http';
+import {FVAlertService} from '../alert.service';
+import {FVWaitingService} from '../waiting/waiting.service';
 
 export class FileHolder {
   public serverResponse: any;
@@ -48,7 +47,7 @@ export class FVUploadComponent implements OnInit {
   @Input()
   dropBoxMessage: string = "Drop your images here!";
 
-  constructor(private imageService: FVFileService, private alertService:FVAlertService, private waitingService:FVWaitingService) { }
+  constructor(private imageService: FVFileService, private alertService: FVAlertService, private waitingService:FVWaitingService) { }
 
   ngOnInit() {
     if(this.multiple == true){
